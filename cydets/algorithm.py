@@ -131,7 +131,7 @@ def find_peaks_valleys_idx(series):
     """
     Find the indices of peaks and valleys.
 
-    - Calculate the difference of neighboring values in the series.
+    - Calculate the difference of neighboring values in the series. #seems like the difference is with the immediate next value.
     - Search for sign changes in the differences.
     - Remove sign changes for zeros (zero has an own sign in numpy).
     - Iterate over indices of the sign changes:
